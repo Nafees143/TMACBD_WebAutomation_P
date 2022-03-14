@@ -1,6 +1,9 @@
 package testCases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -21,7 +24,7 @@ public class TestCases {
 	
 	@BeforeClass
 	public void start() {
-		driver.get(homePage.homePageUrl());
+		driver.get("https://tmacbd.com");
 		driver.manage().window().maximize();
 		
 	}
@@ -29,6 +32,7 @@ public class TestCases {
 	public void landingPage() throws InterruptedException {
 		
 		//navigation bar
+		
 		commonMethods.clickBtn(Locators.LogoClick);
 		Thread.sleep(3000);
 		
@@ -58,16 +62,34 @@ public class TestCases {
 		commonMethods.sendText(Locators.EnterEmil, "Tester@gmail.com");
 		Thread.sleep(2000);
 		
-		commonMethods.sendText(Locators.EnterSubject, "Muibornafriha");
+		commonMethods.sendText(Locators.EnterSubject, "wow!");
 		Thread.sleep(2000);
 		
-		commonMethods.sendText(Locators.EnterMessage, "zahid the name of play boy muib also");
+		commonMethods.sendText(Locators.EnterMessage, "wow! wow!! wow!!!");
 		Thread.sleep(2000);
 		
-		commonMethods.clickBtn(Locators.SendMessageBtn);
-		Thread.sleep(2000);
+//		commonMethods.clickBtn(Locators.SendMessageBtn);
+//		Thread.sleep(2000);
 		
+		//scroll element
+
+		Thread.sleep(2000);
+		scorllToElement();
+		Thread.sleep(1000);
+		scorllToElement();
+		Thread.sleep(1000);
+		scorllToElement();
+		Thread.sleep(1000);
+		scorllToElement();
+		
+		//close window
 		base.tearDown();
+	}
+	
+	public void scorllToElement() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,200);");
+		
 	}
 	
 }

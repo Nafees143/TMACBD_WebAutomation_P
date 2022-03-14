@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31464" started-at="2022-03-13T15:30:37 BDT" finished-at="2022-03-13T15:31:08 BDT">
+  <suite name="Default suite" duration-ms="9879" started-at="2022-03-14T12:20:33 BDT" finished-at="2022-03-14T12:20:43 BDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31464" started-at="2022-03-13T15:30:37 BDT" finished-at="2022-03-13T15:31:08 BDT">
+    <test name="Default test" duration-ms="9879" started-at="2022-03-14T12:20:33 BDT" finished-at="2022-03-14T12:20:43 BDT">
       <class name="testCases.TestCases">
-        <test-method status="PASS" signature="start()[pri:0, instance:testCases.TestCases@7cbee484]" name="start" is-config="true" duration-ms="4444" started-at="2022-03-13T15:30:37 BDT" finished-at="2022-03-13T15:30:41 BDT">
+        <test-method status="PASS" signature="start()[pri:0, instance:testCases.TestCases@7cbee484]" name="start" is-config="true" duration-ms="4568" started-at="2022-03-14T12:20:33 BDT" finished-at="2022-03-14T12:20:38 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="landingPage()[pri:0, instance:testCases.TestCases@7cbee484]" name="landingPage" duration-ms="26942" started-at="2022-03-13T15:30:41 BDT" finished-at="2022-03-13T15:31:08 BDT">
+        <test-method status="PASS" signature="landingPage()[pri:0, instance:testCases.TestCases@7cbee484]" name="landingPage" duration-ms="5225" started-at="2022-03-14T12:20:38 BDT" finished-at="2022-03-14T12:20:43 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->

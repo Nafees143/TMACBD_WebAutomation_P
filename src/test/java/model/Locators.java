@@ -26,4 +26,7 @@ public class Locators {
 	public static By EnterMessage = By.xpath("//textarea[@id='message']");
 	public static By SendMessageBtn = By.xpath("//button[@id='submit']");
 	
+	//for scroll
+	//public static By freeQuote = By.xpath("//h4[contains(text(),'Grow With Us Now')]");
+	
 }
